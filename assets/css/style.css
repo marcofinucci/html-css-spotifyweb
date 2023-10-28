@@ -1,0 +1,120 @@
+.container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+
+}
+
+/* Site header */
+
+.site-header {
+    background-color: var(--color-accent1);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+}
+
+.site-header__cta {
+    margin-left: var(--space-2);
+}
+
+/* Features */
+
+.features {
+    margin-top: var(--space-8);
+}
+
+.features__card {
+    background-color: var(--color-light);
+    border-radius: var(--radius-1);
+}
+
+/* Planning */
+
+.planning {
+    background-color: var(--color-medium);
+    margin-top: var(--space-8);
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+}
+
+.planning__card {
+    background-color: var(--color-extralight);
+    border-radius: var(--radius-2);
+}
+
+/* Testimonial */
+
+.testimonial {
+    margin-top: var(--space-8);
+}
+
+.testimonial__cards {
+    padding-top: var(--space-7);
+}
+
+.testimonial__card {
+    background-color: var(--color-medium);
+    padding: var(--space-5);
+    border-radius: var(--radius-2);
+}
+
+.testimonial__card-avatar {
+    border-radius: 100%;
+    width: 200px;
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+/* Benefits */
+
+.benefits {
+    background-color: var(--color-medium);
+    margin-top: var(--space-8);
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+}
+
+.benefits__cards {
+    padding-top: var(--space-7);
+}
+
+.benefits__card {
+    background-color: var(--color-extralight);
+    border-radius: var(--radius-2);
+}
+
+/* About */
+
+.about {
+    margin-top: var(--space-8);
+}
+
+/* Started */
+
+.started {
+    background-color: var(--color-medium);
+    margin-top: var(--space-8);
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+}
+
+/* Site footer */
+
+.site-footer {
+    background-color: var(--color-extradark);
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+}
+
+/*
+** Breakpoint: md 
+*/
+
+@media screen and (min-width: 768px) {
+
+    /* Testimonial */
+
+    .testimonial__card-avatar {
+        margin: 0;
+    }
+
+}

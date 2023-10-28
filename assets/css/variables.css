@@ -1,0 +1,42 @@
+:root {
+    /* Spaces */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-10: 6rem;
+
+    /* Gutter */
+    --gutter-x: var(--space-5);
+    --gutter-y: 0;
+
+    /* Colors */
+    --color-extralight: #ffffff;
+    --color-light: #a3a3a3;
+    --color-lightmedium: #686868;
+    --color-medium: #282828;
+    --color-mediumdark: #141922;
+    --color-dark: #080b12;
+    --color-extradark: #000000;
+    --color-accent: #adff2f;
+
+    /* Fonts size */
+    --font-1: 2.488rem;
+    --font-2: 2.074rem;
+    --font-3: 1.728rem;
+    --font-4: 1.2rem;
+    --font-5: 0.833rem;
+    --font-6: 0.694rem;
+    --font-base: 1rem;
+
+    /* Fonts familiy */
+    --font-family-base: "Montserrat", sans-serif;
+
+    /* Line height */
+    --line-base: 1.45;
+}
