@@ -36,19 +36,29 @@ p {
 h1,
 h2,
 h3,
-h4 {
-    font-size: var(--font-size-5);
+h4,
+h5,
+h6 {
     font-weight: var(--weight-bold);
+}
+
+h1,
+h2,
+h3 {
+    font-size: var(--font-size-5);
+}
+
+h4 {
+    font-size: var(--font-size-4);
 }
 
 h5,
 h6 {
     font-size: var(--font-size-3);
-    font-weight: var(--weight-bold);
 }
 
 p {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-5);
 
     &:last-child {
         margin-bottom: 0;

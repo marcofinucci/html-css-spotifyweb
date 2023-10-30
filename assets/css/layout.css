@@ -1,7 +1,7 @@
 .container,
 .container-fluid {
-    padding-left: var(--gutter-x);
-    padding-right: var(--gutter-x);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
 }
 
 .container {

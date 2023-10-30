@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Spotify</title>
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +22,6 @@
         <link rel="stylesheet" href="./assets/css/common.css" />
         <link rel="stylesheet" href="./assets/css/utility.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/debug.css" />
     </head>
 
     <body>
@@ -30,9 +32,50 @@
                     <!-- Sidebar -->
                     <div class="app__sidebar">
                         <div class="app__sidebar-inner">
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            <div class="d-flex flex-column h-100">
+                                <div class="flex-grow-1">
+                                    <!-- Logo -->
+                                    <div class="main-logo">
+                                        <img src="./assets/img/logo.svg" alt="Spotify logo" />
+                                    </div>
+                                    <!-- Nav main -->
+                                    <nav class="nav-main">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="icon icon--home"></i>Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icon icon--search"></i>Cerca</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icon icon--library"></i>La tua libreria</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <!-- Playlist -->
+                                    <div class="playlist">
+                                        <h4 class="playlist__title">Playlist</h4>
+                                        <!-- Playlist new -->
+                                        <div class="playlist__new">
+                                            <i class="fa-solid fa-plus"></i>
+                                            <div>Crea Playlist</div>
+                                        </div>
+                                        <!-- Playlist items -->
+                                        <nav class="playlist__items">
+                                            <ul>
+                                                <li><a href="#">Nome playlist</a></li>
+                                                <li><a href="#">Nome playlist</a></li>
+                                                <li><a href="#">Nome playlist</a></li>
+                                                <li><a href="#">Nome playlist</a></li>
+                                                <li><a href="#">Nome playlist</a></li>
+                                                <li><a href="#">Nome playlist</a></li>
+                                                <li><a href="#">Nome playlist</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div>lorem</div>
+                            </div>
                         </div>
                     </div>
 
@@ -64,7 +107,7 @@
                                     </nav>
 
                                     <!-- Cards -->
-                                    <div class="cards mt-4">
+                                    <div class="cards mt-6">
                                         <h2 class="cards__title">Recently played</h2>
                                         <div class="row">
                                             <!-- Card -->
@@ -131,7 +174,7 @@
                                     </div>
 
                                     <!-- Cards -->
-                                    <div class="cards mt-7">
+                                    <div class="cards mt-8">
                                         <h2 class="cards__title">Creato per John Doe</h2>
                                         <div class="cards__subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
                                         <div class="row">
@@ -157,7 +200,7 @@
                                     </div>
 
                                     <!-- Cards -->
-                                    <div class="cards mt-7">
+                                    <div class="cards mt-8">
                                         <h2 class="cards__title">Artisti più popolari</h2>
                                         <div class="cards__subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
                                         <div class="row">
