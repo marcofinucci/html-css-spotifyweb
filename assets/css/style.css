@@ -1,120 +1,75 @@
-.container {
-    padding-left: var(--space-6);
-    padding-right: var(--space-6);
-
+html,
+body,
+.app {
+    overflow: hidden;
+    height: 100svh;
 }
 
-/* Site header */
-
-.site-header {
-    background-color: var(--color-accent1);
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
+.app {
+    display: flex;
+    flex-direction: column;
 }
 
-.site-header__cta {
-    margin-left: var(--space-2);
+/* Top */
+
+.app__top {
+    flex-grow: 1;
+    overflow: hidden;
 }
 
-/* Features */
-
-.features {
-    margin-top: var(--space-8);
+.app__top-inner {
+    display: flex;
+    height: 100%;
 }
 
-.features__card {
-    background-color: var(--color-light);
-    border-radius: var(--radius-1);
+/* Sidebar */
+
+.app__sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    width: 240px;
+    height: 100%;
 }
 
-/* Planning */
-
-.planning {
-    background-color: var(--color-medium);
-    margin-top: var(--space-8);
-    padding-top: var(--space-8);
-    padding-bottom: var(--space-8);
+.app__sidebar-inner {
+    overflow-y: auto;
 }
 
-.planning__card {
-    background-color: var(--color-extralight);
-    border-radius: var(--radius-2);
+/* Content */
+
+.app__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
-/* Testimonial */
+/* Header */
 
-.testimonial {
-    margin-top: var(--space-8);
+.app__header {
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
-.testimonial__cards {
-    padding-top: var(--space-7);
+/* Main */
+
+.app__main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
 }
 
-.testimonial__card {
-    background-color: var(--color-medium);
-    padding: var(--space-5);
-    border-radius: var(--radius-2);
+.app__main-inner {
+    overflow-y: auto;
 }
 
-.testimonial__card-avatar {
-    border-radius: 100%;
-    width: 200px;
-    aspect-ratio: 1;
-    margin: 0 auto;
-}
+/* Bottom  */
 
-/* Benefits */
-
-.benefits {
-    background-color: var(--color-medium);
-    margin-top: var(--space-8);
-    padding-top: var(--space-8);
-    padding-bottom: var(--space-8);
-}
-
-.benefits__cards {
-    padding-top: var(--space-7);
-}
-
-.benefits__card {
-    background-color: var(--color-extralight);
-    border-radius: var(--radius-2);
-}
-
-/* About */
-
-.about {
-    margin-top: var(--space-8);
-}
-
-/* Started */
-
-.started {
-    background-color: var(--color-medium);
-    margin-top: var(--space-8);
-    padding-top: var(--space-8);
-    padding-bottom: var(--space-8);
-}
-
-/* Site footer */
-
-.site-footer {
-    background-color: var(--color-extradark);
-    padding-top: var(--space-8);
-    padding-bottom: var(--space-8);
-}
-
-/*
-** Breakpoint: md 
-*/
-
-@media screen and (min-width: 768px) {
-
-    /* Testimonial */
-
-    .testimonial__card-avatar {
-        margin: 0;
-    }
-
+.app__bottom {
+    flex-grow: 0;
+    flex-shrink: 0;
 }
