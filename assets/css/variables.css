@@ -12,7 +12,7 @@
     --space-10: 6rem;
 
     /* Gutter */
-    --gutter-x: var(--space-5);
+    --gutter-x: var(--space-4);
     --gutter-y: 0;
 
     /* Colors */
@@ -23,20 +23,22 @@
     --color-mediumdark: #141922;
     --color-dark: #080b12;
     --color-extradark: #000000;
-    --color-accent: #adff2f;
+    --color-accent1: #adff2f;
 
     /* Fonts size */
-    --font-1: 2.488rem;
-    --font-2: 2.074rem;
-    --font-3: 1.728rem;
-    --font-4: 1.2rem;
-    --font-5: 0.833rem;
-    --font-6: 0.694rem;
-    --font-base: 1rem;
+    --font-size-1: 0.625rem;
+    --font-size-2: 0.75rem;
+    --font-size-3: 0.875rem;
+    --font-size-4: 1rem;
+    --font-size-5: 1.5rem;
 
     /* Fonts familiy */
-    --font-family-base: "Montserrat", sans-serif;
+    --font-family-1: "Montserrat", sans-serif;
+
+    /* Font weight */
+    --weight-regular: 400;
+    --weight-bold: 700;
 
     /* Line height */
-    --line-base: 1.45;
+    --line-height-1: 1.2;
 }
