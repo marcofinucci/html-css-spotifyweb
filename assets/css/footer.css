@@ -1,0 +1,145 @@
+.app__footer {
+    padding: var(--space-6) var(--space-5);
+}
+
+/* Bar */
+
+.bar {
+    width: 100%;
+    background-color: var(--color-lightmedium);
+    height: 4px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bar-current {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    border-radius: 20px;
+    background-color: var(--color-extralight);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.bar-current:before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    height: 14px;
+    width: 14px;
+    content: "";
+    display: block;
+    background-color: var(--color-extralight);
+    border-radius: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.bar-current:hover {
+    background-color: var(--color-accent1);
+}
+
+.bar-current:hover:before {
+    opacity: 1;
+}
+
+/* Current song */
+
+.current-song {
+    display: flex;
+    align-items: center;
+}
+
+.current-song__image {
+    max-width: 40px;
+    margin-right: var(--space-4);
+}
+
+.current-song__title {
+    font-size: var(--font-size-2);
+    font-weight: var(--weight-bold);
+}
+
+.current-song__subtitle {
+    font-size: var(--font-size-1);
+    font-weight: var(--weight-bold);
+    color: var(--color-light);
+}
+
+.current-song__icons {
+    color: var(--color-light);
+    margin-left: var(--space-7);
+}
+
+.current-song__icons i {
+    font-size: var(--font-size-3);
+    margin-left: var(--space-3);
+}
+
+/* Player - Icons */
+
+.player__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player__icons i {
+    margin: 0 var(--space-5);
+}
+
+.player__icons i:nth-child(3) {
+    font-size: var(--font-size-6);
+}
+
+/* Player - Time */
+
+.player__time {
+    margin-top: var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player__time-current {
+    font-size: var(--font-size-1);
+    font-weight: var(--weight-bold);
+    margin-right: var(--space-5);
+}
+
+.player__time .bar {
+    max-width: 500px;
+}
+
+.player__time-total {
+    font-size: var(--font-size-1);
+    font-weight: var(--weight-bold);
+    margin-left: var(--space-5);
+}
+
+/* Settings */
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.settings__icons {
+    display: flex;
+    align-items: center;
+}
+
+.settings__icons i {
+    font-size: var(--font-size-3);
+    margin-left: var(--space-6);
+}
+
+.settings .bar {
+    max-width: 120px;
+    margin-left: var(--space-4);
+}

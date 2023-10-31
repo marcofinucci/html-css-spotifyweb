@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/sidebar.css" />
         <link rel="stylesheet" href="./assets/css/content.css" />
+        <link rel="stylesheet" href="./assets/css/footer.css" />
     </head>
 
     <body>
@@ -245,13 +246,58 @@
 
             <!-- App bottom -->
             <div class="app__bottom">
-                <div class="app__bottom-inner container-fluid">
-                    <div class="row">
-                        <div class="col">COL</div>
-                        <div class="col-auto">COL-AUTO</div>
-                        <div class="col">COL</div>
+                <footer class="app__footer container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Current song -->
+                        <div class="col-3">
+                            <div class="current-song">
+                                <div class="current-song__image">
+                                    <img src="./assets/img/sinister.jpeg" alt="Card" />
+                                </div>
+                                <div class="current-song__text">
+                                    <div class="current-song__title">Sinister</div>
+                                    <div class="current-song__subtitle">Brano Nome</div>
+                                </div>
+                                <div class="current-song__icons">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-folder"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Player -->
+                        <div class="col-6">
+                            <div class="player">
+                                <div class="player__icons">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                    <i class="fa-solid fa-backward-step"></i>
+                                    <i class="fa-regular fa-circle-play"></i>
+                                    <i class="fa-solid fa-forward-step"></i>
+                                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                                </div>
+                                <div class="player__time">
+                                    <div class="player__time-current">0:25</div>
+                                    <div class="bar">
+                                        <div class="bar-current"></div>
+                                    </div>
+                                    <div class="player__time-total">4:35</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Settings -->
+                        <div class="col-3">
+                            <div class="settings">
+                                <div class="settings__icons">
+                                    <i class="fa-solid fa-list"></i>
+                                    <i class="fa-solid fa-desktop"></i>
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </div>
+                                <div class="bar">
+                                    <div class="bar-current"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </footer>
             </div>
         </div>
     </body>
