@@ -168,7 +168,7 @@
 ** Max height 700px
 */
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 800px) {
     /* Header */
 
     .app__header {

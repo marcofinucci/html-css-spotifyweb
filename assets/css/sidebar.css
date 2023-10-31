@@ -81,6 +81,7 @@
     font-weight: var(--weight-bold);
     color: var(--color-light);
     margin-top: var(--space-4);
+    font-size: var(--font-size-3);
     transition: color 0.3s;
 }
 
