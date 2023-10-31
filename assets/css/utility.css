@@ -1,16 +1,16 @@
 /* Gutter */
 
 .g-0 {
-    --col-gutter-y: 0;
-    --col-gutter-x: 0;
+    --row-gutter-y: 0;
+    --row-gutter-x: 0;
 }
 
 .gy-0 {
-    --col-gutter-y: 0;
+    --row-gutter-y: 0;
 }
 
 .gx-0 {
-    --col-gutter-x: 0;
+    --row-gutter-x: 0;
 }
 
 /* Margin */
@@ -110,16 +110,16 @@
     /* Gutter */
 
     .g-sm-0 {
-        --col-gutter-y: 0;
-        --col-gutter-x: 0;
+        --row-gutter-y: 0;
+        --row-gutter-x: 0;
     }
 
     .gy-sm-0 {
-        --col-gutter-y: 0;
+        --row-gutter-y: 0;
     }
 
     .gx-sm-0 {
-        --col-gutter-x: 0;
+        --row-gutter-x: 0;
     }
 
     /* Margin */
@@ -213,16 +213,16 @@
     /* Gutter */
 
     .g-md-0 {
-        --col-gutter-y: 0;
-        --col-gutter-x: 0;
+        --row-gutter-y: 0;
+        --row-gutter-x: 0;
     }
 
     .gy-md-0 {
-        --col-gutter-y: 0;
+        --row-gutter-y: 0;
     }
 
     .gx-md-0 {
-        --col-gutter-x: 0;
+        --row-gutter-x: 0;
     }
 
     /* Margin */
@@ -316,16 +316,16 @@
     /* Gutter */
 
     .g-lg-0 {
-        --col-gutter-y: 0;
-        --col-gutter-x: 0;
+        --row-gutter-y: 0;
+        --row-gutter-x: 0;
     }
 
     .gy-lg-0 {
-        --col-gutter-y: 0;
+        --row-gutter-y: 0;
     }
 
     .gx-lg-0 {
-        --col-gutter-x: 0;
+        --row-gutter-x: 0;
     }
 
     /* Margin */

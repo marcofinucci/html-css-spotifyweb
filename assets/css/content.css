@@ -23,6 +23,7 @@
     text-transform: uppercase;
     font-weight: var(--weight-bold);
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .app__header .button:hover {
@@ -161,4 +162,16 @@
     font-size: var(--font-size-2);
     font-weight: var(--weight-bold);
     color: var(--color-light);
+}
+
+/*
+** Max height 700px
+*/
+
+@media screen and (max-height: 700px) {
+    /* Header */
+
+    .app__header {
+        display: none;
+    }
 }
