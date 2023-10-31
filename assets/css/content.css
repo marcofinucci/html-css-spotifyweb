@@ -22,6 +22,11 @@
     color: var(--color-extralight);
     text-transform: uppercase;
     font-weight: var(--weight-bold);
+    transition: transform 0.3s;
+}
+
+.app__header .button:hover {
+    transform: scale(1.03);
 }
 
 /* Main */
@@ -79,9 +84,7 @@
     transition: color 0.3s;
 }
 
-.nav-categories a:hover,
-.nav-categories a:focus,
-.nav-categories a:active {
+.nav-categories a:hover {
     color: var(--color-extralight);
 }
 
@@ -96,22 +99,54 @@
 
 .cards__card {
     margin-top: var(--space-7);
+    display: block;
+    color: var(--color-extralight);
 }
 
 .cards__card-image {
     width: 100%;
     aspect-ratio: 1;
     position: relative;
+}
 
-    & img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+.cards__card-image:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cards__card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cards__card-image i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: var(--font-size-6);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.cards__card-image:hover::before,
+.cards__card-image:hover i {
+    opacity: 1;
 }
 
 .cards__card-title {

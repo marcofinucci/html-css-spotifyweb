@@ -68,16 +68,27 @@
     font-size: var(--font-size-1);
     font-weight: var(--weight-bold);
     color: var(--color-light);
+    transition: color 0.3s;
+}
+
+.current-song__subtitle:hover {
+    color: var(--color-extralight);
+    text-decoration: underline;
 }
 
 .current-song__icons {
-    color: var(--color-light);
     margin-left: var(--space-7);
 }
 
-.current-song__icons i {
+.current-song__icons button {
+    color: var(--color-light);
     font-size: var(--font-size-3);
     margin-left: var(--space-3);
+    transition: color 0.3s;
+}
+
+.current-song__icons button:hover {
+    color: var(--color-extralight);
 }
 
 /* Player - Icons */
@@ -88,12 +99,17 @@
     justify-content: center;
 }
 
-.player__icons i {
+.player__icons button {
     margin: 0 var(--space-5);
 }
 
-.player__icons i:nth-child(3) {
+.player__icons .button-play {
     font-size: var(--font-size-6);
+    transition: transform 0.3s;
+}
+
+.player__icons .button-play:hover {
+    transform: scale(1.05);
 }
 
 /* Player - Time */

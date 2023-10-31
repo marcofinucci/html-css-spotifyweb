@@ -61,9 +61,7 @@
     color: var(--color-extralight);
 }
 
-.nav-main a:hover,
-.nav-main a:focus,
-.nav-main a:active {
+.nav-main a:hover {
     color: var(--color-extralight);
 }
 
@@ -78,19 +76,29 @@
 }
 
 .playlist__new {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-weight: var(--weight-bold);
     color: var(--color-light);
     margin-top: var(--space-4);
+    transition: color 0.3s;
 }
 
 .playlist__new i {
-    background: var(--color-light);
+    background-color: var(--color-light);
     color: var(--color-extradark);
     padding: var(--space-3);
     font-size: var(--font-size-4);
     margin-right: var(--space-3);
+    transition: background-color 0.3s;
+}
+
+.playlist__new:hover {
+    color: var(--color-extralight);
+}
+
+.playlist__new:hover i {
+    background-color: var(--color-extralight);
 }
 
 .playlist__items ul {
@@ -103,6 +111,11 @@
     font-weight: var(--weight-bold);
     font-size: var(--font-size-2);
     margin-top: var(--space-5);
+    transition: color 0.3s;
+}
+
+.playlist__items ul a:hover {
+    color: var(--color-extralight);
 }
 
 /* Install app */
@@ -113,10 +126,15 @@
     color: var(--color-light);
     font-weight: var(--weight-bold);
     font-size: var(--font-size-2);
+    transition: color 0.3s;
 }
 
 .install-app i {
     font-size: var(--font-size-3);
+}
+
+.install-app a:hover {
+    color: var(--color-extralight);
 }
 
 /* Profile */
