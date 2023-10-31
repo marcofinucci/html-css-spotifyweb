@@ -1,0 +1,142 @@
+.app__sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    width: 220px;
+    height: 100%;
+    background-color: var(--color-extradark);
+}
+
+.app__sidebar-inner {
+    overflow-y: auto;
+    padding: var(--space-5);
+    height: 100%;
+}
+
+/* Main logo */
+
+.main-logo {
+    max-width: 130px;
+}
+
+/* Nav main */
+
+.nav-main {
+    margin-top: var(--space-6);
+}
+
+.nav-main ul {
+    list-style-type: none;
+}
+
+.nav-main a {
+    color: var(--color-light);
+    font-weight: var(--weight-bold);
+    font-size: var(--font-size-2);
+    padding: var(--space-2) 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-main .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: var(--space-3);
+}
+
+.nav-main li:first-child a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    left: calc(-1 * var(--space-5));
+    border-left: 3px solid var(--color-accent1);
+}
+
+.nav-main li:first-child a {
+    color: var(--color-extralight);
+}
+
+.nav-main a:hover,
+.nav-main a:focus,
+.nav-main a:active {
+    color: var(--color-extralight);
+}
+
+/* Playlist */
+
+.playlist {
+    margin-top: var(--space-6);
+}
+
+.playlist__title {
+    text-transform: uppercase;
+}
+
+.playlist__new {
+    display: flex;
+    align-items: center;
+    font-weight: var(--weight-bold);
+    color: var(--color-light);
+    margin-top: var(--space-4);
+}
+
+.playlist__new i {
+    background: var(--color-light);
+    color: var(--color-extradark);
+    padding: var(--space-3);
+    font-size: var(--font-size-4);
+    margin-right: var(--space-3);
+}
+
+.playlist__items ul {
+    list-style-type: none;
+}
+
+.playlist__items ul a {
+    display: inline-block;
+    color: var(--color-light);
+    font-weight: var(--weight-bold);
+    font-size: var(--font-size-2);
+    margin-top: var(--space-5);
+}
+
+/* Install app */
+
+.install-app a {
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+    font-weight: var(--weight-bold);
+    font-size: var(--font-size-2);
+}
+
+.install-app i {
+    font-size: var(--font-size-3);
+    margin-right: var(--space-3);
+}
+
+/* Profile */
+
+.profile {
+    border-top: 1px solid var(--color-light);
+    margin-top: var(--space-3);
+    padding: var(--space-3) 0;
+    display: flex;
+    align-items: center;
+    font-weight: var(--weight-bold);
+    font-size: var(--font-size-3);
+}
+
+.profile .icon {
+    background-color: var(--color-light);
+    width: 20px;
+    height: 20px;
+    margin-right: var(--space-3);
+    border-radius: 100%;
+}

@@ -22,17 +22,20 @@
         <link rel="stylesheet" href="./assets/css/common.css" />
         <link rel="stylesheet" href="./assets/css/utility.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/sidebar.css" />
+        <link rel="stylesheet" href="./assets/css/content.css" />
     </head>
 
     <body>
         <div class="app">
-            <!-- Top -->
+            <!-- App top -->
             <div class="app__top">
                 <div class="app__top-inner">
                     <!-- Sidebar -->
                     <div class="app__sidebar">
                         <div class="app__sidebar-inner">
                             <div class="d-flex flex-column h-100">
+                                <!-- Top-->
                                 <div class="flex-grow-1">
                                     <!-- Logo -->
                                     <div class="main-logo">
@@ -74,7 +77,16 @@
                                         </nav>
                                     </div>
                                 </div>
-                                <div>lorem</div>
+
+                                <!-- Bottom -->
+                                <div class="mt-8">
+                                    <!-- Install app -->
+                                    <div class="install-app">
+                                        <a href=""><i class="fa-regular fa-circle-down"></i>Installa app</a>
+                                    </div>
+                                    <!-- Profile -->
+                                    <div class="profile"><i class="icon icon--profile"></i>John Doe</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -231,9 +243,15 @@
                 </div>
             </div>
 
-            <!-- Bottom -->
-            <div class="app__bottom" style="height: 50px">
-                <div></div>
+            <!-- App bottom -->
+            <div class="app__bottom">
+                <div class="app__bottom-inner container-fluid">
+                    <div class="row">
+                        <div class="col">COL</div>
+                        <div class="col-auto">COL-AUTO</div>
+                        <div class="col">COL</div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

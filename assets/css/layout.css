@@ -10,21 +10,21 @@
 }
 
 .row {
-    --col-gutter-x: var(--gutter-x);
-    --col-gutter-y: var(--gutter-y);
+    --row-gutter-x: var(--gutter-x);
+    --row-gutter-y: var(--gutter-y);
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * var(--col-gutter-y));
-    margin-right: calc(-0.5 * var(--col-gutter-x));
-    margin-left: calc(-0.5 * var(--col-gutter-x));
+    margin-top: calc(-1 * var(--row-gutter-y));
+    margin-right: calc(-0.5 * var(--row-gutter-x));
+    margin-left: calc(-0.5 * var(--row-gutter-x));
 }
 
 .row > * {
-    padding-right: calc(0.5 * var(--col-gutter-x));
-    padding-left: calc(0.5 * var(--col-gutter-x));
+    padding-top: var(--row-gutter-y);
+    padding-right: calc(0.5 * var(--row-gutter-x));
+    padding-left: calc(0.5 * var(--row-gutter-x));
     width: 100%;
     position: relative;
-    padding-top: var(--col-gutter-y);
 }
 
 .col-auto {
