@@ -40,24 +40,34 @@
                                 <div class="flex-grow-1">
                                     <!-- Logo -->
                                     <div class="main-logo">
-                                        <img src="./assets/img/logo.svg" alt="Spotify logo" />
+                                        <img class="d-sm-none" src="./assets/img/logo-small.svg" alt="Spotify logo" />
+                                        <img class="d-none d-sm-block" src="./assets/img/logo.svg" alt="Spotify logo" />
                                     </div>
                                     <!-- Nav main -->
                                     <nav class="nav-main">
                                         <ul>
                                             <li>
-                                                <a href="#"><i class="icon icon--home"></i>Home</a>
+                                                <a href="#">
+                                                    <i class="icon icon--home"></i>
+                                                    <span class="d-none d-sm-block">Home</span>
+                                                </a>
                                             </li>
                                             <li>
-                                                <a href="#"><i class="icon icon--search"></i>Cerca</a>
+                                                <a href="#">
+                                                    <i class="icon icon--search"></i>
+                                                    <span class="d-none d-sm-block">Cerca</span>
+                                                </a>
                                             </li>
                                             <li>
-                                                <a href="#"><i class="icon icon--library"></i>La tua libreria</a>
+                                                <a href="#">
+                                                    <i class="icon icon--library"></i>
+                                                    <span class="d-none d-sm-block">La tua libreria</span>
+                                                </a>
                                             </li>
                                         </ul>
                                     </nav>
                                     <!-- Playlist -->
-                                    <div class="playlist">
+                                    <div class="playlist d-none d-sm-block">
                                         <h4 class="playlist__title">Playlist</h4>
                                         <!-- Playlist new -->
                                         <div class="playlist__new">
@@ -83,10 +93,16 @@
                                 <div class="mt-8">
                                     <!-- Install app -->
                                     <div class="install-app">
-                                        <a href=""><i class="fa-regular fa-circle-down"></i>Installa app</a>
+                                        <a href="">
+                                            <i class="fa-regular fa-circle-down"></i>
+                                            <span class="d-none d-sm-block">Installa app</span></a
+                                        >
                                     </div>
                                     <!-- Profile -->
-                                    <div class="profile"><i class="icon icon--profile"></i>John Doe</div>
+                                    <div class="profile">
+                                        <i class="icon icon--profile"></i>
+                                        <span class="d-none d-sm-block">John Doe</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -119,12 +135,12 @@
                                         </ul>
                                     </nav>
 
-                                    <!-- Cards -->
-                                    <div class="cards mt-6">
+                                    <!-- Recently played -->
+                                    <div class="cards mt-8">
                                         <h2 class="cards__title">Recently played</h2>
                                         <div class="row">
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image">
                                                         <img src="./assets/img/metal_lifting.jpg" alt="Card" />
@@ -134,7 +150,7 @@
                                                 </div>
                                             </div>
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image">
                                                         <img src="./assets/img/stranger.jpeg" alt="Card" />
@@ -144,7 +160,7 @@
                                                 </div>
                                             </div>
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image">
                                                         <img src="./assets/img/aquietplace.jpeg" alt="Card" />
@@ -154,7 +170,7 @@
                                                 </div>
                                             </div>
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image">
                                                         <img src="./assets/img/split.jpeg" alt="Card" />
@@ -164,7 +180,7 @@
                                                 </div>
                                             </div>
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image">
                                                         <img src="./assets/img/cure.jpeg" alt="Card" />
@@ -174,7 +190,7 @@
                                                 </div>
                                             </div>
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image">
                                                         <img src="./assets/img/sinister.jpeg" alt="Card" />
@@ -186,13 +202,13 @@
                                         </div>
                                     </div>
 
-                                    <!-- Cards -->
+                                    <!-- Created for -->
                                     <div class="cards mt-8">
                                         <h2 class="cards__title">Creato per John Doe</h2>
                                         <div class="cards__subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
                                         <div class="row">
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image">
                                                         <img src="./assets/img/radar.jpeg" alt="Card" />
@@ -201,7 +217,7 @@
                                                 </div>
                                             </div>
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image">
                                                         <img src="./assets/img/mixdaily.jpeg" alt="Card" />
@@ -212,13 +228,13 @@
                                         </div>
                                     </div>
 
-                                    <!-- Cards -->
+                                    <!-- Popular artist -->
                                     <div class="cards mt-8">
                                         <h2 class="cards__title">Artisti più popolari</h2>
                                         <div class="cards__subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
                                         <div class="row">
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image circle">
                                                         <img src="./assets/img/youg.jpeg" alt="Card" />
@@ -227,7 +243,7 @@
                                                 </div>
                                             </div>
                                             <!-- Card -->
-                                            <div class="col-md-3 col-lg-2">
+                                            <div class="col-6 col-md-3 col-lg-2">
                                                 <div class="cards__card">
                                                     <div class="cards__card-image circle">
                                                         <img src="./assets/img/einaudi.jpeg" alt="Card" />

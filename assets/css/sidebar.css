@@ -4,20 +4,20 @@
     flex-grow: 0;
     flex-shrink: 0;
     overflow: hidden;
-    width: 220px;
     height: 100%;
     background-color: var(--color-extradark);
 }
 
 .app__sidebar-inner {
     overflow-y: auto;
-    padding: var(--space-5);
+    padding: 0 var(--space-5);
     height: 100%;
 }
 
 /* Main logo */
 
 .main-logo {
+    padding-top: var(--space-5);
     max-width: 130px;
 }
 
@@ -45,7 +45,6 @@
 .nav-main .icon {
     width: 20px;
     height: 20px;
-    margin-right: var(--space-3);
 }
 
 .nav-main li:first-child a:before {
@@ -109,8 +108,8 @@
 /* Install app */
 
 .install-app a {
-    display: flex;
-    align-items: center;
+    display: table;
+    margin: 0 auto;
     color: var(--color-light);
     font-weight: var(--weight-bold);
     font-size: var(--font-size-2);
@@ -118,15 +117,14 @@
 
 .install-app i {
     font-size: var(--font-size-3);
-    margin-right: var(--space-3);
 }
 
 /* Profile */
 
 .profile {
-    border-top: 1px solid var(--color-light);
     margin-top: var(--space-3);
     padding-top: var(--space-3);
+    padding-bottom: var(--space-5);
     display: flex;
     align-items: center;
     font-weight: var(--weight-bold);
@@ -137,6 +135,43 @@
     background-color: var(--color-light);
     width: 20px;
     height: 20px;
-    margin-right: var(--space-3);
     border-radius: 100%;
+}
+
+/*
+** Breakpoint: sm
+*/
+
+@media screen and (min-width: 638px) {
+    .app__sidebar {
+        width: 220px;
+    }
+
+    /* Nav main */
+
+    .nav-main .icon {
+        margin-right: var(--space-3);
+    }
+
+    /* Install app */
+
+    .install-app a {
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+
+    .install-app i {
+        margin-right: var(--space-3);
+    }
+
+    /* Profile */
+
+    .profile {
+        border-top: 1px solid var(--color-light);
+    }
+
+    .profile .icon {
+        margin-right: var(--space-3);
+    }
 }
